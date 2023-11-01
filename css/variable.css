@@ -1,0 +1,18 @@
+:root {
+    --color-primary: #DF00A9;
+
+    --color-primary-100: #FF00BF;
+    --color-primary-200: #EC00B1;
+    --color-primary-300: #DA00A3;
+    --color-primary-400: #C70095;
+    --color-primary-500: #B40087;
+    --color-primary-600: #A10079;
+    --color-primary-700: #8F006B;
+    --color-primary-800: #7C005D;
+    --color-primary-900: #69004F;
+
+    --color-on-primary: white;
+
+
+    --color-bg: #e7e7e7;
+}
