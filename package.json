@@ -1,0 +1,38 @@
+{
+  "name": "kenrey-ui-cdn",
+  "version": "1.0.0",
+  "description": "CSS Repository for kenrey-ui",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run scss && parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url .",
+    "scss": "node-sass src/scss -o assets/css",
+    "scss-watch": "node-sass --watch src/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KenReyMozo/kenrey-ui-cdn.git"
+  },
+  "author": "KendallRey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KenReyMozo/kenrey-ui-cdn/issues"
+  },
+  "homepage": "https://github.com/KenReyMozo/kenrey-ui-cdn#readme",
+  "keywords": [],
+  "devDependencies": {
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "my-react-typescript-package": "^1.0.0",
+    "node-sass": "^9.0.0",
+    "parcel": "^2.10.1",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "kenrey-ui": "^1.0.5"
+  }
+}

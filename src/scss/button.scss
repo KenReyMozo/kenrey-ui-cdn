@@ -1,0 +1,19 @@
+.btn {
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition-duration: 150ms;
+    opacity: .9;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+        opacity: 1;
+    }
+    &:active {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+        opacity: 1;
+    }
+}
