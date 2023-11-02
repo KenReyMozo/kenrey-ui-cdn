@@ -4,7 +4,7 @@
   "description": "CSS Repository for kenrey-ui",
   "scripts": {
     "start": "npm run scss && parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir docs --public-url .",
+    "build": "npm run scss && parcel build src/index.html --dist-dir docs --public-url .",
     "scss": "node-sass src/scss -o assets/css",
     "scss-watch": "node-sass --watch src/scss -o assets/css"
   },

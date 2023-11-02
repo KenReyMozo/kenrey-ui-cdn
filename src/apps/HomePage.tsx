@@ -9,10 +9,10 @@ const HomePage : React.FC = () => {
                 Primary
             </Button>
             <Button className="btn" variant='primary'>
-                TEST
+                TEST 1
             </Button>
             <Button className="btn" variant='primary'>
-                TEST
+                TEST 2
             </Button>
         </div>
     )
