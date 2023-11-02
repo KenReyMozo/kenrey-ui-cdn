@@ -2,7 +2,6 @@
   "name": "kenrey-ui-cdn",
   "version": "1.0.0",
   "description": "CSS Repository for kenrey-ui",
-  "main": "index.js",
   "scripts": {
     "start": "npm run scss && parcel src/index.html",
     "build": "parcel build src/index.html --dist-dir docs --public-url .",
@@ -33,6 +32,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "kenrey-ui": "^1.0.5"
+    "kenrey-ui": "^1.0.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
