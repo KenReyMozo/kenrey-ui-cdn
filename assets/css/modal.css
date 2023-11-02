@@ -1,0 +1,29 @@
+.modal-container {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg-popup-shade);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.modal-content {
+  background: var(--color-bg-modal);
+  animation: popup-modal 100ms linear; }
+
+.modal-header {
+  font-size: 2em; }
+
+.modal-hide {
+  display: none; }
+
+@keyframes popup-modal {
+  0% {
+    opacity: 0;
+    scale: 0; }
+  30% {
+    scale: 0.6; }
+  70% {
+    scale: 0.4; }
+  100% {
+    scale: 1;
+    opacity: 1; } }

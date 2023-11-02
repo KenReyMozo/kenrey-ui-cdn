@@ -10,4 +10,6 @@
   --color-primary-800: #7C005D;
   --color-primary-900: #69004F;
   --color-on-primary: white;
-  --color-bg: #e7e7e7; }
+  --color-bg: #e7e7e7;
+  --color-bg-popup-shade: #00000046;
+  --color-bg-modal: #e7e7e7; }
