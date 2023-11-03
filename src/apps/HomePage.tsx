@@ -18,6 +18,10 @@ const HomePage : React.FC = () => {
                 TEST 2
             </Button>
             <Modal show={viewModal} onClose={()=>setViewModal(false)}
+                style={{
+                    width : 1200
+                }}
+                clickOutsideClose={true}
                 header={'Modal Title'}
                 footer={'Modal Footer'}>
                 MODAL

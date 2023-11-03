@@ -1,16 +1,14 @@
 import { ReactNode, useEffect, useState } from "react";
 import React from "react";
-import styles from '../../../index.module.css';
 import { Colorable } from "../component";
-
 
 type ModalT = {
     show: boolean;
     onClose: ()=>void;
     header?: ReactNode;
     footer?: ReactNode;
-    children?: ReactNode;
-} & Colorable
+    clickOutsideClose?: boolean;
+} & Colorable & React.ComponentProps<'div'>
 
 const Modal : React.FC<ModalT> = (props) => {
 
@@ -20,35 +18,49 @@ const Modal : React.FC<ModalT> = (props) => {
         header,
         footer,
         children,
+        variant,
+        shade,
+        clickOutsideClose,
+        ...cleanProps
     } = props;
 
     const [_show, _setShow] = useState(show);
 
     useEffect(() => {
-
+        if(show) {
+            _setShow(show)
+            return;
+        }
         const interval = setTimeout(() => _setShow(show), 200);
         return () => {
           clearTimeout(interval);
         };
       }, [show]);
 
+    const onClickOutside = () => {
+        if(clickOutsideClose===false) return;
+        onClose()
+    };
+
+    const stopPropagation = (e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation();
+
     return (
         <>
         {_show &&
-        <div className={`modal-container ${_show ? '' : 'modal-hide'}`}>
-            <div className={`modal-content`}>
-                {header &&
-                <div className={`modal-header`}>
+        <div className={`modal-container ${show ? '' : 'modal-hide'}`} onClick={onClickOutside}>
+            <div className={`modal-content`} onClick={stopPropagation} {...cleanProps}>
+                <div className={`modal-header ${variant ? `${variant}${shade?`-${shade}`:''}` : 'primary-100'}`}>
                     {header}
+                    {onClose &&
+                    <button className={`modal-close`} onClick={onClose}>X</button>
+                    }
                 </div>
-                }
                 <div className={`modal-body`}>
                     {children}
                 </div>
                 {footer &&
-                <div className={`modal-footer`}>
+                <div className={`modal-footer ${variant ? `${variant}${shade?`-${shade}`:''}` : 'primary-100'}`}>
                     {footer}
-                    <button onClick={onClose}>X</button>
                 </div>
                 }
             </div>
