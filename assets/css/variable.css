@@ -13,4 +13,7 @@
   --color-bg: #e7e7e7;
   --color-bg-popup-shade: #00000046;
   --color-bg-modal: #e7e7e7;
-  --shadow-text: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+  --shadow-text: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --shadow-sm: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --shadow-md: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --shadow-lg: rgba(0, 0, 0, 0.35) 0px 5px 15px; }

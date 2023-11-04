@@ -25,7 +25,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 2rem; }
+  min-height: 2rem;
+  box-shadow: var(--shadow-lg); }
   .modal-header .modal-close {
     position: absolute;
     right: 1rem;
@@ -47,7 +48,8 @@
 
 .modal-footer {
   font-size: 1.5em;
-  padding: 0.3rem 1rem; }
+  padding: 0.3rem 1rem;
+  box-shadow: var(--shadow-lg); }
 
 .modal-hide {
   opacity: 0; }
