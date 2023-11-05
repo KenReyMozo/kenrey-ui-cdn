@@ -50,7 +50,7 @@ export class Sidebar extends Component<SidebarProps, SidebarState> {
     return (
         <>
           {isOpen &&
-            <div className={'sidebar-block'} onClick={this.onClose}></div>
+            <div className={'sidebar-block'} onClick={this.onClose}>Sidebar</div>
           }
           <div
             className={`${'sidebar-container'} ${isOpen ? 'sidebar-show' : 'sidebar-hide'}`}
