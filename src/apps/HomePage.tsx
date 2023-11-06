@@ -1,14 +1,17 @@
-import { Button } from "kenrey-component"
+import { Button, Modal, Sidebar } from "kenrey-component"
 import React, { useState } from "react"
-import Modal from "../component/modal/Modal";
 
 const HomePage : React.FC = () => {
 
     const [viewModal, setViewModal] = useState(false);
 
+    const onOpenSidebar = () => {
+        Sidebar.onOpen();
+    }
+
     return (
         <div>
-            <Button variant='primary'>
+            <Button variant='primary' onClick={onOpenSidebar}>
                 Primary
             </Button>
             <Button variant='primary'>
