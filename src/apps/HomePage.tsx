@@ -1,8 +1,6 @@
-import { Sidebar } from "kenrey-component"
+import { Button, Modal, Sidebar } from "kenrey-component"
 import React, { useState } from "react"
 import { Shades } from "./List";
-import Button from "../component/button/Button";
-import Modal from "../component/modal/Modal";
 
 const HomePage : React.FC = () => {
 
