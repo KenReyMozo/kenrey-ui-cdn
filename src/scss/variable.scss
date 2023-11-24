@@ -1,4 +1,10 @@
+$generic-0: #FFFFFF;
+$generic-100: #00000000;
+
 :root {
+
+    --generic-0: #{$generic-0};
+    --generic-100: #{$generic-100};
 
     --color-neutral-100: #F0F6FF;
     --color-neutral-200: #B3D4FF;
