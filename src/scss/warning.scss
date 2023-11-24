@@ -1,0 +1,86 @@
+$warning: #FFC000;
+
+$warning-50: #FFFFEA;
+$warning-100: #FFFBC5;
+$warning-200: #FFF885;
+$warning-300: #FFEE46;
+$warning-400: #FFDF1B;
+$warning-500: #FFC000;
+$warning-600: #E29400;
+$warning-700: #BB6902;
+$warning-800: #985108;
+$warning-900: #7C420B;
+$warning-950: #482200;
+
+$warning-text: #FFFFEA;
+$warning-text-dark: #482200;
+
+:root {
+    --color-warning: #{$warning};
+
+    --color-warning-50: #{$warning-50};
+    --color-warning-100: #{$warning-100};
+    --color-warning-200: #{$warning-200};
+    --color-warning-300: #{$warning-300};
+    --color-warning-400: #{$warning-400};
+    --color-warning-500: #{$warning-500};
+    --color-warning-600: #{$warning-600};
+    --color-warning-700: #{$warning-700};
+    --color-warning-800: #{$warning-800};
+    --color-warning-900: #{$warning-900};
+    --color-warning-950: #{$warning-950};
+
+    --color-on-warning: #{$warning-text};
+    --color-on-warning-dark: #{$warning-text-dark};
+
+}
+
+.warning {
+    background-color: var(--color-warning);
+    color: var(--color-on-warning);
+}
+
+.warning-50 {
+    background-color: var(--color-warning-50);
+    color: var(--color-on-warning-dark);
+}
+.warning-100 {
+    background-color: var(--color-warning-100);
+    color: var(--color-on-warning-dark);
+}
+.warning-200 {
+    background-color: var(--color-warning-200);
+    color: var(--color-on-warning-dark);
+}
+.warning-300 {
+    background-color: var(--color-warning-300);
+    color: var(--color-on-warning-dark);
+}
+.warning-400 {
+    background-color: var(--color-warning-400);
+    color: var(--color-on-warning);
+}
+.warning-500 {
+    background-color: var(--color-warning-500);
+    color: var(--color-on-warning);
+}
+.warning-600 {
+    background-color: var(--color-warning-600);
+    color: var(--color-on-warning);
+}
+.warning-700 {
+    background-color: var(--color-warning-700);
+    color: var(--color-on-warning);
+}
+.warning-800 {
+    background-color: var(--color-warning-800);
+    color: var(--color-on-warning);
+}
+.warning-900 {
+    background-color: var(--color-warning-900);
+    color: var(--color-on-warning);
+}
+.warning-950 {
+    background-color: var(--color-warning-950);
+    color: var(--color-on-warning);
+}

@@ -6,6 +6,7 @@ type Shades = {
 }[]
 
 export const Shades : Shades = [
+  { id: 'shade-50', value: '50' },
   { id: 'shade-100', value: '100' },
   { id: 'shade-200', value: '200' },
   { id: 'shade-300', value: '300' },
@@ -14,5 +15,6 @@ export const Shades : Shades = [
   { id: 'shade-600', value: '600' },
   { id: 'shade-700', value: '700' },
   { id: 'shade-800', value: '800' },
-  { id: 'shade-900', value: '900' }
+  { id: 'shade-900', value: '900' },
+  { id: 'shade-950', value: '950' }
 ]

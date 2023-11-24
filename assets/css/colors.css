@@ -2,17 +2,21 @@
   background-color: var(--color-primary);
   color: var(--color-on-primary); }
 
+.primary-50 {
+  background-color: var(--color-primary-50);
+  color: var(--color-on-primary-dark); }
+
 .primary-100 {
   background-color: var(--color-primary-100);
-  color: var(--color-on-primary); }
+  color: var(--color-on-primary-dark); }
 
 .primary-200 {
   background-color: var(--color-primary-200);
-  color: var(--color-on-primary); }
+  color: var(--color-on-primary-dark); }
 
 .primary-300 {
   background-color: var(--color-primary-300);
-  color: var(--color-on-primary); }
+  color: var(--color-on-primary-dark); }
 
 .primary-400 {
   background-color: var(--color-primary-400);
@@ -36,4 +40,8 @@
 
 .primary-900 {
   background-color: var(--color-primary-900);
+  color: var(--color-on-primary); }
+
+.primary-950 {
+  background-color: var(--color-primary-950);
   color: var(--color-on-primary); }
