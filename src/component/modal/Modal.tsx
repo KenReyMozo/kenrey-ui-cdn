@@ -49,7 +49,7 @@ const Modal : React.FC<ModalT> = (props) => {
         {_show &&
         <div className={`modal-container ${show ? '' : 'modal-hide'}`} onClick={onClickOutside}>
             <div className={`modal-content`} onClick={stopPropagation} {...cleanProps}>
-                <div className={`modal-header ${variant ? `${variant}${shade?`-${shade}`:''}` : 'primary-100'}`}>
+                <div className={`modal-header ${variant ? `${variant}${shade?`-${shade}`:''}` : 'primary'}`}>
                     {header}
                     {onClose &&
                     <button className={`modal-close`} onClick={onClose}>X</button>
@@ -59,7 +59,7 @@ const Modal : React.FC<ModalT> = (props) => {
                     {children}
                 </div>
                 {footer &&
-                <div className={`modal-footer ${variant ? `${variant}${shade?`-${shade}`:''}` : 'primary-100'}`}>
+                <div className={`modal-footer ${variant ? `${variant}${shade?`-${shade}`:''}` : 'primary'}`}>
                     {footer}
                 </div>
                 }

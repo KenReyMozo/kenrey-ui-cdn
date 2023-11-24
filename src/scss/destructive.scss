@@ -1,0 +1,86 @@
+$destructive: #EE2E2E;
+
+$destructive-50: #FEF2F2;
+$destructive-100: #FEE2E2;
+$destructive-200: #FECACA;
+$destructive-300: #FCA5A5;
+$destructive-400: #F97070;
+$destructive-500: #EE2E2E;
+$destructive-600: #DD2525;
+$destructive-700: #BA1B1B;
+$destructive-800: #9A1A1A;
+$destructive-900: #7F1D1D;
+$destructive-950: #450A0A;
+
+$destructive-text: #FEF2F2;
+$destructive-text-dark: #450A0A;
+
+:root {
+    --color-destructive: #{$destructive};
+
+    --color-destructive-50: #{$destructive-50};
+    --color-destructive-100: #{$destructive-100};
+    --color-destructive-200: #{$destructive-200};
+    --color-destructive-300: #{$destructive-300};
+    --color-destructive-400: #{$destructive-400};
+    --color-destructive-500: #{$destructive-500};
+    --color-destructive-600: #{$destructive-600};
+    --color-destructive-700: #{$destructive-700};
+    --color-destructive-800: #{$destructive-800};
+    --color-destructive-900: #{$destructive-900};
+    --color-destructive-950: #{$destructive-950};
+
+    --color-on-destructive: #{$destructive-text};
+    --color-on-destructive-dark: #{$destructive-text-dark};
+
+}
+
+.destructive {
+    background-color: var(--color-destructive);
+    color: var(--color-on-destructive);
+}
+
+.destructive-50 {
+    background-color: var(--color-destructive-50);
+    color: var(--color-on-destructive-dark);
+}
+.destructive-100 {
+    background-color: var(--color-destructive-100);
+    color: var(--color-on-destructive-dark);
+}
+.destructive-200 {
+    background-color: var(--color-destructive-200);
+    color: var(--color-on-destructive-dark);
+}
+.destructive-300 {
+    background-color: var(--color-destructive-300);
+    color: var(--color-on-destructive-dark);
+}
+.destructive-400 {
+    background-color: var(--color-destructive-400);
+    color: var(--color-on-destructive);
+}
+.destructive-500 {
+    background-color: var(--color-destructive-500);
+    color: var(--color-on-destructive);
+}
+.destructive-600 {
+    background-color: var(--color-destructive-600);
+    color: var(--color-on-destructive);
+}
+.destructive-700 {
+    background-color: var(--color-destructive-700);
+    color: var(--color-on-destructive);
+}
+.destructive-800 {
+    background-color: var(--color-destructive-800);
+    color: var(--color-on-destructive);
+}
+.destructive-900 {
+    background-color: var(--color-destructive-900);
+    color: var(--color-on-destructive);
+}
+.destructive-950 {
+    background-color: var(--color-destructive-950);
+    color: var(--color-on-destructive);
+}
