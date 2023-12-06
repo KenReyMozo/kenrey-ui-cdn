@@ -5,3 +5,7 @@ export type Colorable = {
   variant?: Variant
   shade?: Shade
 }
+
+export type CustomVariant<T> = {
+  variant?: T
+}
