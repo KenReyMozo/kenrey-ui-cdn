@@ -1,0 +1,86 @@
+$success: #09B065;
+
+$success-50: #EFFEF7;
+$success-100: #D9DDED;
+$success-200: #B6DCDA;
+$success-300: #7DF8BF;
+$success-400: #3DEB9B;
+$success-500: #15E486;
+$success-600: #09B065;
+$success-700: #0B8A52;
+$success-800: #0F6C43;
+$success-900: #0E5939;
+$success-950: #01321E;
+
+$success-text: #EFFEF7;
+$success-text-dark: #01321E;
+
+:root {
+    --color-success: #{$success};
+
+    --color-success-50: #{$success-50};
+    --color-success-100: #{$success-100};
+    --color-success-200: #{$success-200};
+    --color-success-300: #{$success-300};
+    --color-success-400: #{$success-400};
+    --color-success-500: #{$success-500};
+    --color-success-600: #{$success-600};
+    --color-success-700: #{$success-700};
+    --color-success-800: #{$success-800};
+    --color-success-900: #{$success-900};
+    --color-success-950: #{$success-950};
+
+    --color-on-success: #{$success-text};
+    --color-on-success-dark: #{$success-text-dark};
+
+}
+
+.success {
+    background-color: var(--color-success);
+    color: var(--color-on-success);
+}
+
+.success-50 {
+    background-color: var(--color-success-50);
+    color: var(--color-on-success-dark);
+}
+.success-100 {
+    background-color: var(--color-success-100);
+    color: var(--color-on-success-dark);
+}
+.success-200 {
+    background-color: var(--color-success-200);
+    color: var(--color-on-success-dark);
+}
+.success-300 {
+    background-color: var(--color-success-300);
+    color: var(--color-on-success-dark);
+}
+.success-400 {
+    background-color: var(--color-success-400);
+    color: var(--color-on-success);
+}
+.success-500 {
+    background-color: var(--color-success-500);
+    color: var(--color-on-success);
+}
+.success-600 {
+    background-color: var(--color-success-600);
+    color: var(--color-on-success);
+}
+.success-700 {
+    background-color: var(--color-success-700);
+    color: var(--color-on-success);
+}
+.success-800 {
+    background-color: var(--color-success-800);
+    color: var(--color-on-success);
+}
+.success-900 {
+    background-color: var(--color-success-900);
+    color: var(--color-on-success);
+}
+.success-950 {
+    background-color: var(--color-success-950);
+    color: var(--color-on-success);
+}

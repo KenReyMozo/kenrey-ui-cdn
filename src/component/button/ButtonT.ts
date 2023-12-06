@@ -1,5 +1,5 @@
-import { CustomVariant } from "../component"
+import { CustomSize, CustomVariant, Size } from "../component"
 
 type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'outline' | 'link'
 
-export type ButtonT = CustomVariant<ButtonVariant> & React.ComponentProps<'button'>
+export type ButtonT = CustomVariant<ButtonVariant> & CustomSize<Size> & React.ComponentProps<'button'>

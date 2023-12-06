@@ -1,0 +1,86 @@
+$neutral: #8A8A8A;
+
+$neutral-50: #F9F9F9;
+$neutral-100: #F4F4F4;
+$neutral-200: #E4E4E4;
+$neutral-300: #D3D3D3;
+$neutral-400: #A2A2A2;
+$neutral-500: #8A8A8A;
+$neutral-600: #737373;
+$neutral-700: #525252;
+$neutral-800: #404040;
+$neutral-900: #262626;
+$neutral-950: #171717;
+
+$neutral-text: #F4F4F4;
+$neutral-text-dark: #262626;
+
+:root {
+    --color-neutral: #{$neutral};
+
+    --color-neutral-50: #{$neutral-50};
+    --color-neutral-100: #{$neutral-100};
+    --color-neutral-200: #{$neutral-200};
+    --color-neutral-300: #{$neutral-300};
+    --color-neutral-400: #{$neutral-400};
+    --color-neutral-500: #{$neutral-500};
+    --color-neutral-600: #{$neutral-600};
+    --color-neutral-700: #{$neutral-700};
+    --color-neutral-800: #{$neutral-800};
+    --color-neutral-900: #{$neutral-900};
+    --color-neutral-950: #{$neutral-950};
+
+    --color-on-neutral: #{$neutral-text};
+    --color-on-neutral-dark: #{$neutral-text-dark};
+
+}
+
+.neutral {
+    background-color: var(--color-neutral);
+    color: var(--color-on-neutral);
+}
+
+.neutral-50 {
+    background-color: var(--color-neutral-50);
+    color: var(--color-on-neutral-dark);
+}
+.neutral-100 {
+    background-color: var(--color-neutral-100);
+    color: var(--color-on-neutral-dark);
+}
+.neutral-200 {
+    background-color: var(--color-neutral-200);
+    color: var(--color-on-neutral-dark);
+}
+.neutral-300 {
+    background-color: var(--color-neutral-300);
+    color: var(--color-on-neutral-dark);
+}
+.neutral-400 {
+    background-color: var(--color-neutral-400);
+    color: var(--color-on-neutral);
+}
+.neutral-500 {
+    background-color: var(--color-neutral-500);
+    color: var(--color-on-neutral);
+}
+.neutral-600 {
+    background-color: var(--color-neutral-600);
+    color: var(--color-on-neutral);
+}
+.neutral-700 {
+    background-color: var(--color-neutral-700);
+    color: var(--color-on-neutral);
+}
+.neutral-800 {
+    background-color: var(--color-neutral-800);
+    color: var(--color-on-neutral);
+}
+.neutral-900 {
+    background-color: var(--color-neutral-900);
+    color: var(--color-on-neutral);
+}
+.neutral-950 {
+    background-color: var(--color-neutral-950);
+    color: var(--color-on-neutral);
+}

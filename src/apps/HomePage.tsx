@@ -1,6 +1,7 @@
-import { Button, Modal, Sidebar } from "kenrey-component"
+import { Modal, Sidebar } from "kenrey-component"
 import React, { useState } from "react"
 import { Shades } from "./List";
+import Button from "../component/button/Button";
 
 const HomePage : React.FC = () => {
 
@@ -12,7 +13,14 @@ const HomePage : React.FC = () => {
 
     return (
         <>
-            {Shades.map((item) => <Button key={item.id} variant='primary' shade={item.value}>{item.value}</Button>)}
+            {Shades.map((item) => <Button key={item.id} variant='primary' size='sm'>{item.value}</Button>)}
+            <br/>
+            {Shades.map((item) => <Button key={item.id} variant='primary'>{item.value}</Button>)}
+            <br/>
+            {Shades.map((item) => <Button key={item.id} variant='primary' size='lg'>{item.value}</Button>)}
+            <br/>
+            {Shades.map((item) => <Button key={item.id} variant='primary' size='xl'>{item.value}</Button>)}
+            <br/>
             <hr/>
             <Button variant='primary' onClick={()=>setViewModal(true)}>
                 Modal

@@ -1,16 +1,63 @@
+:root {
+  --btn-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --btn-shadow-hover: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+  --btn-shadow-active: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+  --btn-transition-duration: 150ms;
+  --btn-opacity: 0.9;
+  --btn-opacity-hover: 1;
+  --btn-opacity-active: 1;
+  --btn-padding-sm: 8px 12px 8px 12px;
+  --btn-padding-md: 10px 16px 10px 16px;
+  --btn-padding-lg: 14px 20px 14px 20px;
+  --btn-padding-xl: 24px 48px 24px 48px;
+  --btn-size-sm: 12px;
+  --btn-size-md: 14px;
+  --btn-size-lg: 18px;
+  --btn-size-xl: 28px;
+  --btn-border-radius-sm: 8px;
+  --btn-border-radius-md: 8px;
+  --btn-border-radius-lg: 8px;
+  --btn-border-radius-xl: 8px; }
+
 .btn {
-  border: none;
-  border-radius: 0.2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--btn-shadow);
   cursor: pointer;
-  transition-duration: 150ms;
-  opacity: .9; }
+  transition-duration: var(--btn-transition-duration);
+  opacity: var(--btn-opacity); }
   .btn:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
-    opacity: 1; }
+    box-shadow: var(--btn-shadow-hover);
+    opacity: var(--btn-opacity-hover); }
   .btn:active {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
-    opacity: 1; }
+    box-shadow: var(--btn-shadow-active);
+    opacity: var(--btn-opacity-active); }
+
+.btn-sm {
+  border-radius: var(--btn-border-radius-sm);
+  font-size: var(--btn-size-sm);
+  font-weight: 500;
+  padding: var(--btn-padding-sm); }
+
+.btn-md {
+  border-radius: var(--btn-border-radius-md);
+  font-size: var(--btn-size-md);
+  font-weight: 500;
+  padding: var(--btn-padding-md); }
+
+.btn-lg {
+  border-radius: var(--btn-border-radius-lg);
+  font-size: var(--btn-size-lg);
+  font-weight: 500;
+  padding: var(--btn-padding-lg); }
+
+.btn-xl {
+  border-radius: var(--btn-border-radius-xl);
+  font-size: var(--btn-size-xl);
+  font-weight: 500;
+  padding: var(--btn-padding-xl); }
+
+.btn-primary {
+  border: none;
+  background: linear-gradient(90deg, #3e85e4 0%, #004aad 100%); }
+  .btn-primary:hover {
+    background: #ecdb98;
+    background: linear-gradient(90deg, #ecdb98 0%, #d9b426 100%); }

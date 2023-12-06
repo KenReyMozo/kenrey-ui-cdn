@@ -1,16 +1,13 @@
 import React from 'react'
-import styles from '../../index.module.css'
 import { ButtonT } from './ButtonT'
 
 const Button = (props: ButtonT) => {
-  const { variant, ...cleanProps } = props
+  const { variant, size, ...cleanProps } = props
 
   return (
     <button
       {...cleanProps}
-      className={`${styles['btn']} ${cleanProps.className ?? ''} ${
-        variant ? styles[`btn-${variant ?? 'primary'}`] : ''
-      }`}
+      className={`${'btn'} ${cleanProps.className ?? ''} ${`btn-${variant ?? 'primary'}`} ${`btn-${size ?? 'md'}`}`}
     />
   )
 }

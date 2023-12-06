@@ -1,0 +1,63 @@
+:root {
+  --color-warning: #FFC000;
+  --color-warning-50: #FFFFEA;
+  --color-warning-100: #FFFBC5;
+  --color-warning-200: #FFF885;
+  --color-warning-300: #FFEE46;
+  --color-warning-400: #FFDF1B;
+  --color-warning-500: #FFC000;
+  --color-warning-600: #E29400;
+  --color-warning-700: #BB6902;
+  --color-warning-800: #985108;
+  --color-warning-900: #7C420B;
+  --color-warning-950: #482200;
+  --color-on-warning: #FFFFEA;
+  --color-on-warning-dark: #482200; }
+
+.warning {
+  background-color: var(--color-warning);
+  color: var(--color-on-warning); }
+
+.warning-50 {
+  background-color: var(--color-warning-50);
+  color: var(--color-on-warning-dark); }
+
+.warning-100 {
+  background-color: var(--color-warning-100);
+  color: var(--color-on-warning-dark); }
+
+.warning-200 {
+  background-color: var(--color-warning-200);
+  color: var(--color-on-warning-dark); }
+
+.warning-300 {
+  background-color: var(--color-warning-300);
+  color: var(--color-on-warning-dark); }
+
+.warning-400 {
+  background-color: var(--color-warning-400);
+  color: var(--color-on-warning); }
+
+.warning-500 {
+  background-color: var(--color-warning-500);
+  color: var(--color-on-warning); }
+
+.warning-600 {
+  background-color: var(--color-warning-600);
+  color: var(--color-on-warning); }
+
+.warning-700 {
+  background-color: var(--color-warning-700);
+  color: var(--color-on-warning); }
+
+.warning-800 {
+  background-color: var(--color-warning-800);
+  color: var(--color-on-warning); }
+
+.warning-900 {
+  background-color: var(--color-warning-900);
+  color: var(--color-on-warning); }
+
+.warning-950 {
+  background-color: var(--color-warning-950);
+  color: var(--color-on-warning); }
