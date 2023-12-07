@@ -13,13 +13,11 @@ const HomePage : React.FC = () => {
 
     return (
         <>
-            {Shades.map((item) => <Button key={item.id} variant='primary' size='sm'>{item.value}</Button>)}
+            {Shades.map((item) => <Button key={item.id} style={{ margin: 5 }} variant='primary'>{item.value}</Button>)}
             <br/>
-            {Shades.map((item) => <Button key={item.id} variant='primary'>{item.value}</Button>)}
+            {Shades.map((item) => <Button key={item.id} style={{ margin: 5 }} variant='secondary'>{item.value}</Button>)}
             <br/>
-            {Shades.map((item) => <Button key={item.id} variant='primary' size='lg'>{item.value}</Button>)}
-            <br/>
-            {Shades.map((item) => <Button key={item.id} variant='primary' size='xl'>{item.value}</Button>)}
+            {Shades.map((item) => <Button key={item.id} style={{ margin: 5 }} variant='tertiary'>{item.value}</Button>)}
             <br/>
             <hr/>
             <Button variant='primary' onClick={()=>setViewModal(true)}>

@@ -1,0 +1,15 @@
+:root {
+  --color-slate: #004AAD;
+  --color-slate-50: #F0F6FF;
+  --color-slate-100: #F0F4F8;
+  --color-slate-200: #E1E8F0;
+  --color-slate-300: #CAD4E0;
+  --color-slate-400: #A4AFBD;
+  --color-slate-500: #7F8DAA;
+  --color-slate-600: #657180;
+  --color-slate-700: #475569;
+  --color-slate-800: #33424F;
+  --color-slate-900: #1F2E3B;
+  --color-slate-950: #0e151b;
+  --color-on-slate: white;
+  --color-on-slate-dark: #004094; }

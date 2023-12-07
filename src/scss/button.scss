@@ -23,6 +23,110 @@ $btn-size-md: 14px;
 $btn-size-lg: 18px;
 $btn-size-xl: 28px;
 
+// Primary Button
+$btn-primary-border: 1px solid var(--color-primary-300);
+$btn-primary-color: var(--color-on-primary);
+$btn-primary-background: linear-gradient(88deg, var(--color-primary-400) 0%, var(--color-primary-500) 100%);
+$btn-primary-box-shadow: unset;
+
+$btn-primary-border-hover: 1px solid var(--color-secondary-400);
+$btn-primary-color-hover: var(--color-generic-0);
+$btn-primary-background-hover: linear-gradient(88deg, var(--color-secondary-400) 0%, var(--color-secondary-500) 100%);
+$btn-primary-box-shadow-hover: unset;
+
+$btn-primary-border-active: 1px solid var(--color-primary-300);
+$btn-primary-color-active: var(--color-primary-300);
+$btn-primary-background-active: linear-gradient(88deg, var(--color-secondary-400) 0%, var(--color-secondary-500) 100%);
+$btn-primary-box-shadow-active: 0 0 0 0.3em var(--color-primary-300);
+
+$btn-primary-border-focus: 1px solid var(--color-primary-300);
+$btn-primary-color-focus: var(--color-primary-50);
+$btn-primary-background-focus: linear-gradient(88deg, var(--color-primary-500) 0%, var(--color-primary-600) 100%);
+$btn-primary-box-shadow-focus: 0 0 0 0.3em var(--color-primary-300);
+
+$btn-primary-background-disabled: var(--color-primary-300);
+// Primary Button
+
+// Secondary Button
+$btn-secondary-border: 1px solid transparent;
+$btn-secondary-color: var(--color-primary);
+$btn-secondary-background: var(--primary-100, #DBEBFF); 
+$btn-secondary-box-shadow: unset;
+
+$btn-secondary-border-hover: 1px solid transparent;
+$btn-secondary-color-hover: var(--color-secondary-600);
+$btn-secondary-background-hover: var(--color-secondary-200);
+$btn-secondary-box-shadow-hover: unset;
+
+$btn-secondary-border-active: 1px solid var(--color-primary-300);;
+$btn-secondary-color-active: var(--color-primary-400);
+$btn-secondary-background-active: var(--color-primary-200);
+$btn-secondary-box-shadow-active: unset;
+
+$btn-secondary-border-focus: 1px solid var(--color-primary-300);;
+$btn-secondary-color-focus: var(--color-primary-400);
+$btn-secondary-background-focus: var(--color-primary-200);
+$btn-secondary-box-shadow-focus: 0 0 0 0.3em var(--color-primary-300);
+
+$btn-secondary-background-disabled:  var(--color-primary-100);
+// Secondary Button
+
+// Tertiary Button
+$btn-tertiary-border: 1px solid var(--color-neutral-200, #E4E4E4);
+$btn-tertiary-color: var(--color-neutral-700, #525252);
+$btn-tertiary-background: var(--color-generic-0, #FFF);
+$btn-tertiary-box-shadow: unset;
+
+$btn-tertiary-border-hover: 1px solid var(--color-slate-300, #CAD4E0);
+$btn-tertiary-color-hover: var(--color-slate-700, #475569);
+$btn-tertiary-background-hover: var(--color-slate-100, #F0F4F8); 
+$btn-tertiary-box-shadow-hover: unset;
+
+$btn-tertiary-border-active: 1px solid var(--color-neutral-300, #D3D3D3);
+$btn-tertiary-color-active: var(--color-neutral-500, #8A8A8A);
+$btn-tertiary-background-active: var(--color-neutral-100, #F4F4F4); 
+$btn-tertiary-box-shadow-active: unset;
+
+$btn-tertiary-border-focus: 1px solid var(--color-neutral-300, #D3D3D3);
+$btn-tertiary-color-focus: var(--color-neutral-500, #8A8A8A);
+$btn-tertiary-background-focus: var(--color-neutral-50, #F9F9F9);
+$btn-tertiary-box-shadow-focus: 0px 0px 0px 4px #CBCBCB; 
+
+$btn-tertiary-background-disabled: var(--color-neutral-100);
+// Tertiary Button
+
+// $button-variants: (
+//   primary: $btn-primary-border-focus,
+//   secondary: $btn-secondary-border-focus,
+//   // Add more variants as needed
+// );
+
+// // Mixin to set dynamic border focus
+// @mixin dynamic-border-focus($variant) {
+//   :root {
+//     --btn-#{$variant}-border-focus: #{map-get($button-variants, $variant)};
+//   }
+// }
+
+// // Example usage
+// @include dynamic-border-focus(te);
+
+
+
+@mixin button-root($variant, $state, $border, $color, $background, $box-shadow) {
+    :root {
+    --btn-#{$variant}-border#{$state}: #{$border};
+    --btn-#{$variant}-color#{$state}: #{$color};
+    --btn-#{$variant}-background#{$state}: #{$background};
+    --btn-#{$variant}-box-shadow#{$state}: #{$box-shadow};
+    }
+}
+
+@include button-root(tertiary, '', $btn-tertiary-border, $btn-tertiary-color, $btn-tertiary-background, $btn-tertiary-box-shadow);
+@include button-root(tertiary, '-hover', $btn-tertiary-border-hover, $btn-tertiary-color-hover, $btn-tertiary-background-hover, $btn-tertiary-box-shadow-hover);
+@include button-root(tertiary, '-active', $btn-tertiary-border-active, $btn-tertiary-color-active, $btn-tertiary-background-active, $btn-tertiary-box-shadow-active);
+@include button-root(tertiary, '-focus', $btn-tertiary-border-focus, $btn-tertiary-color-focus, $btn-tertiary-background-focus, $btn-tertiary-box-shadow-focus);
+
 :root {
     --btn-shadow: #{$btn-shadow};
     --btn-shadow-hover: #{$btn-shadow-hover};
@@ -47,11 +151,80 @@ $btn-size-xl: 28px;
     --btn-border-radius-md: #{$btn-border-radius-md};
     --btn-border-radius-lg: #{$btn-border-radius-lg};
     --btn-border-radius-xl: #{$btn-border-radius-xl};
+
+    // Primary Button
+    --btn-primary-border: #{$btn-primary-border};
+    --btn-primary-color: #{$btn-primary-color};
+    --btn-primary-background: #{$btn-primary-background};
+
+    --btn-primary-border-hover: #{$btn-primary-border-hover};
+    --btn-primary-color-hover: #{$btn-primary-color-hover};
+    --btn-primary-background-hover: #{$btn-primary-background-hover};
+    --btn-primary-box-shadow-hover: #{$btn-primary-box-shadow-hover};
+
+    --btn-primary-border-active: #{$btn-primary-border-active};
+    --btn-primary-color-active: #{$btn-primary-color-active};
+    --btn-primary-background-active: #{$btn-primary-background-active};
+    --btn-primary-box-shadow-active: #{$btn-primary-box-shadow-active};
+
+    --btn-primary-border-focus: #{$btn-primary-border-focus};
+    --btn-primary-color-focus: #{$btn-primary-color-focus};
+    --btn-primary-background-focus: #{$btn-primary-background-focus};
+    --btn-primary-box-shadow-focus: #{$btn-primary-box-shadow-focus};
+
+    --btn-primary-background-disabled: #{$btn-primary-background-disabled};
+    // Primary Button
+
+    // Seconday Button
+    --btn-secondary-border: #{$btn-secondary-border};
+    --btn-secondary-color: #{$btn-secondary-color};
+    --btn-secondary-background: #{$btn-secondary-background};
+
+    --btn-secondary-border-hover: #{$btn-secondary-border-hover};
+    --btn-secondary-color-hover: #{$btn-secondary-color-hover};
+    --btn-secondary-background-hover: #{$btn-secondary-background-hover};
+    --btn-secondary-box-shadow-hover: #{$btn-secondary-box-shadow-hover};
+
+    --btn-secondary-border-active: #{$btn-secondary-border-active};
+    --btn-secondary-color-active: #{$btn-secondary-color-active};
+    --btn-secondary-background-active: #{$btn-secondary-background-active};
+    --btn-secondary-box-shadow-active: #{$btn-secondary-box-shadow-active};
+
+    --btn-secondary-border-focus: #{$btn-secondary-border-focus};
+    --btn-secondary-color-focus: #{$btn-secondary-color-focus};
+    --btn-secondary-background-focus: #{$btn-secondary-background-focus};
+    --btn-secondary-box-shadow-focus: #{$btn-secondary-box-shadow-focus};
+
+    --btn-secondary-background-disabled: #{$btn-secondary-background-disabled};
+    // Seconday Button
+    // Tertiary Button
+    // --btn-tertiary-border: #{$btn-tertiary-border};
+    // --btn-tertiary-color: #{$btn-tertiary-color};
+    // --btn-tertiary-background: #{$btn-tertiary-background};
+
+    // --btn-tertiary-border-hover: #{$btn-tertiary-border-hover};
+    // --btn-tertiary-color-hover: #{$btn-tertiary-color-hover};
+    // --btn-tertiary-background-hover: #{$btn-tertiary-background-hover};
+    // --btn-tertiary-box-shadow-hover: #{$btn-tertiary-box-shadow-hover};
+
+    // --btn-tertiary-border-active: #{$btn-tertiary-border-active};
+    // --btn-tertiary-color-active: #{$btn-tertiary-color-active};
+    // --btn-tertiary-background-active: #{$btn-tertiary-background-active};
+    // --btn-tertiary-box-shadow-active: #{$btn-tertiary-box-shadow-active};
+
+    // --btn-tertiary-border-focus: #{$btn-tertiary-border-focus};
+    // --btn-tertiary-color-focus: #{$btn-tertiary-color-focus};
+    // --btn-tertiary-background-focus: #{$btn-tertiary-background-focus};
+    // --btn-tertiary-box-shadow-focus: #{$btn-tertiary-box-shadow-focus};
+
+    // --btn-tertiary-background-disabled: #{$btn-tertiary-background-disabled};
+    // Tertiary Button
 }
 
 .btn {
     box-shadow: var(--btn-shadow);
     cursor: pointer;
+    box-sizing: border-box;
     transition-duration: var(--btn-transition-duration);
     opacity: var(--btn-opacity);
     &:hover {
@@ -92,11 +265,57 @@ $btn-size-xl: 28px;
     padding: var(--btn-padding-xl);
 }
 
+@mixin base-button($variant, $state){
+    border: var(--btn-#{$variant}-border#{$state});
+    color: var(--btn-#{$variant}-color#{$state});
+    background: var(--btn-#{$variant}-background#{$state});
+    box-shadow: var(--btn-#{$variant}-box-shadow#{$state});
+}
+
 .btn-primary {
-    border: none;
-    background: linear-gradient(90deg, rgba(62,133,228,1) 0%, rgba(0,74,173,1) 100%);
+    @include base-button(primary, '');
     &:hover {
-        // background: rgb(236,219,152);
-        background: linear-gradient(90deg, rgba(236,219,152,1) 0%, rgba(217,180,38,1) 100%);
+        @include base-button(primary, '-hover');
+    }
+    &:active {
+        @include base-button(primary, '-active');
+    }
+    &:focus {
+        @include base-button(primary, '-focus');
+    }
+    &:disabled {
+        background: var(--btn-primary-background-disabled);
+    }
+}
+
+.btn-secondary {
+    @include base-button(secondary, '');
+    &:hover {
+        @include base-button(secondary, -hover);
+    }
+    &:active {
+        @include base-button(secondary, -active);
+    }
+    &:focus {
+        @include base-button(secondary, -focus);
+    }
+    &:disabled {
+        background: var(--btn-secondary-background-disabled);
+    }
+}
+
+.btn-tertiary {
+    @include base-button(tertiary, '');
+    &:hover {
+        @include base-button(tertiary, -hover);
+    }
+    &:active {
+        @include base-button(tertiary, -active);
+    }
+    &:focus {
+        @include base-button(tertiary, -focus);
+    }
+    &:disabled {
+        background: var(--btn-tertiary-background-disabled);
     }
 }

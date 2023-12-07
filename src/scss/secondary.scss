@@ -1,0 +1,86 @@
+$secondary: #FDCB0A;
+
+$secondary-50: #FFFBEB;
+$secondary-100: #FFF7D7;
+$secondary-200: #FEEEAE;
+$secondary-300: #FEE47B;
+$secondary-400: #FED949;
+$secondary-500: #FDCB0A;
+$secondary-600: #E4B602;
+$secondary-700: #CAA202;
+$secondary-800: #A78601;
+$secondary-900: #796101;
+$secondary-950: #564501;
+
+$secondary-text: #FFFFEA;
+$secondary-text-dark: #482200;
+
+:root {
+    --color-secondary: #{$secondary};
+
+    --color-secondary-50: #{$secondary-50};
+    --color-secondary-100: #{$secondary-100};
+    --color-secondary-200: #{$secondary-200};
+    --color-secondary-300: #{$secondary-300};
+    --color-secondary-400: #{$secondary-400};
+    --color-secondary-500: #{$secondary-500};
+    --color-secondary-600: #{$secondary-600};
+    --color-secondary-700: #{$secondary-700};
+    --color-secondary-800: #{$secondary-800};
+    --color-secondary-900: #{$secondary-900};
+    --color-secondary-950: #{$secondary-950};
+
+    --color-on-secondary: #{$secondary-text};
+    --color-on-secondary-dark: #{$secondary-text-dark};
+
+}
+
+.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-on-secondary);
+}
+
+.secondary-50 {
+    background-color: var(--color-secondary-50);
+    color: var(--color-on-secondary-dark);
+}
+.secondary-100 {
+    background-color: var(--color-secondary-100);
+    color: var(--color-on-secondary-dark);
+}
+.secondary-200 {
+    background-color: var(--color-secondary-200);
+    color: var(--color-on-secondary-dark);
+}
+.secondary-300 {
+    background-color: var(--color-secondary-300);
+    color: var(--color-on-secondary-dark);
+}
+.secondary-400 {
+    background-color: var(--color-secondary-400);
+    color: var(--color-on-secondary);
+}
+.secondary-500 {
+    background-color: var(--color-secondary-500);
+    color: var(--color-on-secondary);
+}
+.secondary-600 {
+    background-color: var(--color-secondary-600);
+    color: var(--color-on-secondary);
+}
+.secondary-700 {
+    background-color: var(--color-secondary-700);
+    color: var(--color-on-secondary);
+}
+.secondary-800 {
+    background-color: var(--color-secondary-800);
+    color: var(--color-on-secondary);
+}
+.secondary-900 {
+    background-color: var(--color-secondary-900);
+    color: var(--color-on-secondary);
+}
+.secondary-950 {
+    background-color: var(--color-secondary-950);
+    color: var(--color-on-secondary);
+}

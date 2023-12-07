@@ -1,0 +1,36 @@
+$slate: #004AAD;
+
+$slate-50: #F0F6FF;
+$slate-100: #F0F4F8;
+$slate-200: #E1E8F0;
+$slate-300: #CAD4E0;
+$slate-400: #A4AFBD;
+$slate-500: #7F8DAA;
+$slate-600: #657180;
+$slate-700: #475569;
+$slate-800: #33424F;
+$slate-900: #1F2E3B;
+$slate-950: #0e151b;
+
+$slate-text: white;
+$slate-text-dark: #004094;
+
+:root {
+    --color-slate: #{$slate};
+
+    --color-slate-50: #{$slate-50};
+    --color-slate-100: #{$slate-100};
+    --color-slate-200: #{$slate-200};
+    --color-slate-300: #{$slate-300};
+    --color-slate-400: #{$slate-400};
+    --color-slate-500: #{$slate-500};
+    --color-slate-600: #{$slate-600};
+    --color-slate-700: #{$slate-700};
+    --color-slate-800: #{$slate-800};
+    --color-slate-900: #{$slate-900};
+    --color-slate-950: #{$slate-950};
+
+    --color-on-slate: #{$slate-text};
+    --color-on-slate-dark: #{$slate-text-dark};
+
+}
