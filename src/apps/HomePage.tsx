@@ -13,11 +13,15 @@ const HomePage : React.FC = () => {
 
     return (
         <>
-            {Shades.map((item) => <Button key={item.id} style={{ margin: 5 }} variant='primary'>{item.value}</Button>)}
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 5 }} disabled={i>5} variant='primary'>{item.value}</Button>)}
             <br/>
-            {Shades.map((item) => <Button key={item.id} style={{ margin: 5 }} variant='secondary'>{item.value}</Button>)}
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 5 }} disabled={i>5} variant='secondary'>{item.value}</Button>)}
             <br/>
-            {Shades.map((item) => <Button key={item.id} style={{ margin: 5 }} variant='tertiary'>{item.value}</Button>)}
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 5 }} disabled={i>5} variant='tertiary'>{item.value}</Button>)}
+            <br/>
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 5 }} disabled={i>5} variant='outline'>{item.value}</Button>)}
+            <br/>
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 5 }} disabled={i>5} variant='link'>{item.value}</Button>)}
             <br/>
             <hr/>
             <Button variant='primary' onClick={()=>setViewModal(true)}>

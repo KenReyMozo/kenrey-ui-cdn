@@ -44,7 +44,11 @@ $btn-primary-color-focus: var(--color-primary-50);
 $btn-primary-background-focus: linear-gradient(88deg, var(--color-primary-500) 0%, var(--color-primary-600) 100%);
 $btn-primary-box-shadow-focus: 0 0 0 0.3em var(--color-primary-300);
 
-$btn-primary-background-disabled: var(--color-primary-300);
+$btn-primary-border-disabled: 1px solid var(--color-primary-100);
+$btn-primary-color-disabled: var(--color-primary-50);
+$btn-primary-background-disabled: var(--color-primary-100);
+$btn-primary-box-shadow-disabled: unset;
+
 // Primary Button
 
 // Secondary Button
@@ -68,7 +72,12 @@ $btn-secondary-color-focus: var(--color-primary-400);
 $btn-secondary-background-focus: var(--color-primary-200);
 $btn-secondary-box-shadow-focus: 0 0 0 0.3em var(--color-primary-300);
 
-$btn-secondary-background-disabled:  var(--color-primary-100);
+$btn-secondary-border-disabled: 1px solid var(--color-primary-50, #F0F6FF);
+$btn-secondary-color-disabled: var(--color-primary-200, #B3D4FF);
+$btn-secondary-background-disabled:  var(--color-primary-50, #F0F6FF);
+$btn-secondary-box-shadow-disabled: unset;
+
+
 // Secondary Button
 
 // Tertiary Button
@@ -92,40 +101,67 @@ $btn-tertiary-color-focus: var(--color-neutral-500, #8A8A8A);
 $btn-tertiary-background-focus: var(--color-neutral-50, #F9F9F9);
 $btn-tertiary-box-shadow-focus: 0px 0px 0px 4px #CBCBCB; 
 
-$btn-tertiary-background-disabled: var(--color-neutral-100);
+$btn-tertiary-border-disabled: 1px solid var(--color-neutral-200, #E4E4E4);
+$btn-tertiary-color-disabled: var(--color-neutral-300, #D3D3D3);
+$btn-tertiary-background-disabled: var(--color-generic-0, #FFFFFF);
+$btn-tertiary-box-shadow-disabled: unset;
+
 // Tertiary Button
 
-// $button-variants: (
-//   primary: $btn-primary-border-focus,
-//   secondary: $btn-secondary-border-focus,
-//   // Add more variants as needed
-// );
+// Outline Button
+$btn-outline-border: 1px solid var(--color-primary-500, #004AAD);
+$btn-outline-color: var(--color-primary-500, #004AAD);
+$btn-outline-background: transparent;
+$btn-outline-box-shadow: unset;
 
-// // Mixin to set dynamic border focus
-// @mixin dynamic-border-focus($variant) {
-//   :root {
-//     --btn-#{$variant}-border-focus: #{map-get($button-variants, $variant)};
-//   }
-// }
+$btn-outline-border-hover: 1px solid var(--color-secondary-600, #E4B602);
+$btn-outline-color-hover: var(--color-secondary-600, #E4B602);
+$btn-outline-background-hover: transparent;
+$btn-outline-box-shadow-hover: unset;
 
-// // Example usage
-// @include dynamic-border-focus(te);
+$btn-outline-border-active: 1px solid var(--color-primary-400, #2E89FF);
+$btn-outline-color-active: var(--color-primary-400, #2E89FF);
+$btn-outline-background-active: var(--color-primary-50, #2E89FF); 
+$btn-outline-box-shadow-active: 0 0 0 0.3em var(--color-primary-400);
 
+$btn-outline-border-focus: 1px solid var(--color-primary-400, #2E89FF);
+$btn-outline-color-focus: var(--color-primary-500, #004AAD);
+$btn-outline-background-focus: var(--color-primary-50, #2E89FF); 
+$btn-outline-box-shadow-focus: 0 0 0 0.2em var(--color-primary-400);
 
+$btn-outline-border-disabled: 1px solid var(--color-primary-200, #B3D4FF);
+$btn-outline-color-disabled: var(--color-primary-200, #B3D4FF);
+$btn-outline-background-disabled: transparent;
+$btn-outline-box-shadow-disabled: unset;
+// Outline Button
 
-@mixin button-root($variant, $state, $border, $color, $background, $box-shadow) {
-    :root {
-    --btn-#{$variant}-border#{$state}: #{$border};
-    --btn-#{$variant}-color#{$state}: #{$color};
-    --btn-#{$variant}-background#{$state}: #{$background};
-    --btn-#{$variant}-box-shadow#{$state}: #{$box-shadow};
-    }
-}
+// Link Button
+$btn-link-border: 1px solid transparent;
+$btn-link-color: var(--color-primary-500, #004AAD);
+$btn-link-background: transparent;
+$btn-link-box-shadow: unset;
 
-@include button-root(tertiary, '', $btn-tertiary-border, $btn-tertiary-color, $btn-tertiary-background, $btn-tertiary-box-shadow);
-@include button-root(tertiary, '-hover', $btn-tertiary-border-hover, $btn-tertiary-color-hover, $btn-tertiary-background-hover, $btn-tertiary-box-shadow-hover);
-@include button-root(tertiary, '-active', $btn-tertiary-border-active, $btn-tertiary-color-active, $btn-tertiary-background-active, $btn-tertiary-box-shadow-active);
-@include button-root(tertiary, '-focus', $btn-tertiary-border-focus, $btn-tertiary-color-focus, $btn-tertiary-background-focus, $btn-tertiary-box-shadow-focus);
+$btn-link-border-hover: 1px solid transparent;
+$btn-link-color-hover: var(--color-secondary-600, #E4B602);
+$btn-link-background-hover: transparent;
+$btn-link-box-shadow-hover: unset;
+
+$btn-link-border-active: 1px solid transparent;
+$btn-link-color-active: var(--color-primary-400, #2E89FF);
+$btn-link-background-active: transparent;
+$btn-link-box-shadow-active: unset;
+
+$btn-link-border-focus: 1px solid var(--color-primary-500, #004AAD);
+$btn-link-color-focus: var(--color-primary-500, #004AAD);
+$btn-link-background-focus: transparent;
+$btn-link-box-shadow-focus: unset;
+
+$btn-link-border-disabled: 1px solid transparent;
+$btn-link-color-disabled: var(--color-primary-200, #B3D4FF);
+$btn-link-background-disabled: transparent;
+$btn-link-box-shadow-disabled: unset;
+// Link Button
+
 
 :root {
     --btn-shadow: #{$btn-shadow};
@@ -172,7 +208,10 @@ $btn-tertiary-background-disabled: var(--color-neutral-100);
     --btn-primary-background-focus: #{$btn-primary-background-focus};
     --btn-primary-box-shadow-focus: #{$btn-primary-box-shadow-focus};
 
+    --btn-primary-border-disabled: #{$btn-primary-border-disabled};
+    --btn-primary-color-disabled: #{$btn-primary-color-disabled};
     --btn-primary-background-disabled: #{$btn-primary-background-disabled};
+    --btn-primary-box-shadow-disabled: #{$btn-primary-box-shadow-disabled};
     // Primary Button
 
     // Seconday Button
@@ -195,30 +234,89 @@ $btn-tertiary-background-disabled: var(--color-neutral-100);
     --btn-secondary-background-focus: #{$btn-secondary-background-focus};
     --btn-secondary-box-shadow-focus: #{$btn-secondary-box-shadow-focus};
 
+    --btn-secondary-border-disabled: #{$btn-secondary-border-disabled};
+    --btn-secondary-color-disabled: #{$btn-secondary-color-disabled};
     --btn-secondary-background-disabled: #{$btn-secondary-background-disabled};
+    --btn-secondary-box-shadow-disabled: #{$btn-secondary-box-shadow-disabled};
     // Seconday Button
+
     // Tertiary Button
-    // --btn-tertiary-border: #{$btn-tertiary-border};
-    // --btn-tertiary-color: #{$btn-tertiary-color};
-    // --btn-tertiary-background: #{$btn-tertiary-background};
+    --btn-tertiary-border: #{$btn-tertiary-border};
+    --btn-tertiary-color: #{$btn-tertiary-color};
+    --btn-tertiary-background: #{$btn-tertiary-background};
 
-    // --btn-tertiary-border-hover: #{$btn-tertiary-border-hover};
-    // --btn-tertiary-color-hover: #{$btn-tertiary-color-hover};
-    // --btn-tertiary-background-hover: #{$btn-tertiary-background-hover};
-    // --btn-tertiary-box-shadow-hover: #{$btn-tertiary-box-shadow-hover};
+    --btn-tertiary-border-hover: #{$btn-tertiary-border-hover};
+    --btn-tertiary-color-hover: #{$btn-tertiary-color-hover};
+    --btn-tertiary-background-hover: #{$btn-tertiary-background-hover};
+    --btn-tertiary-box-shadow-hover: #{$btn-tertiary-box-shadow-hover};
 
-    // --btn-tertiary-border-active: #{$btn-tertiary-border-active};
-    // --btn-tertiary-color-active: #{$btn-tertiary-color-active};
-    // --btn-tertiary-background-active: #{$btn-tertiary-background-active};
-    // --btn-tertiary-box-shadow-active: #{$btn-tertiary-box-shadow-active};
+    --btn-tertiary-border-active: #{$btn-tertiary-border-active};
+    --btn-tertiary-color-active: #{$btn-tertiary-color-active};
+    --btn-tertiary-background-active: #{$btn-tertiary-background-active};
+    --btn-tertiary-box-shadow-active: #{$btn-tertiary-box-shadow-active};
 
-    // --btn-tertiary-border-focus: #{$btn-tertiary-border-focus};
-    // --btn-tertiary-color-focus: #{$btn-tertiary-color-focus};
-    // --btn-tertiary-background-focus: #{$btn-tertiary-background-focus};
-    // --btn-tertiary-box-shadow-focus: #{$btn-tertiary-box-shadow-focus};
+    --btn-tertiary-border-focus: #{$btn-tertiary-border-focus};
+    --btn-tertiary-color-focus: #{$btn-tertiary-color-focus};
+    --btn-tertiary-background-focus: #{$btn-tertiary-background-focus};
+    --btn-tertiary-box-shadow-focus: #{$btn-tertiary-box-shadow-focus};
 
-    // --btn-tertiary-background-disabled: #{$btn-tertiary-background-disabled};
+    --btn-tertiary-border-disabled: #{$btn-tertiary-border-disabled};
+    --btn-tertiary-color-disabled: #{$btn-tertiary-color-disabled};
+    --btn-tertiary-background-disabled: #{$btn-tertiary-background-disabled};
+    --btn-tertiary-box-shadow-disabled: #{$btn-tertiary-box-shadow-disabled};
     // Tertiary Button
+
+    // Outline Button
+    --btn-outline-border: #{$btn-outline-border};
+    --btn-outline-color: #{$btn-outline-color};
+    --btn-outline-background: #{$btn-outline-background};
+
+    --btn-outline-border-hover: #{$btn-outline-border-hover};
+    --btn-outline-color-hover: #{$btn-outline-color-hover};
+    --btn-outline-background-hover: #{$btn-outline-background-hover};
+    --btn-outline-box-shadow-hover: #{$btn-outline-box-shadow-hover};
+
+    --btn-outline-border-active: #{$btn-outline-border-active};
+    --btn-outline-color-active: #{$btn-outline-color-active};
+    --btn-outline-background-active: #{$btn-outline-background-active};
+    --btn-outline-box-shadow-active: #{$btn-outline-box-shadow-active};
+
+    --btn-outline-border-focus: #{$btn-outline-border-focus};
+    --btn-outline-color-focus: #{$btn-outline-color-focus};
+    --btn-outline-background-focus: #{$btn-outline-background-focus};
+    --btn-outline-box-shadow-focus: #{$btn-outline-box-shadow-focus};
+
+    --btn-outline-border-disabled: #{$btn-outline-border-disabled};
+    --btn-outline-color-disabled: #{$btn-outline-color-disabled};
+    --btn-outline-background-disabled: #{$btn-outline-background-disabled};
+    --btn-outline-box-shadow-disabled: #{$btn-outline-box-shadow-disabled};
+    // Outline Button
+
+    // Link Button
+    --btn-link-border: #{$btn-link-border};
+    --btn-link-color: #{$btn-link-color};
+    --btn-link-background: #{$btn-link-background};
+
+    --btn-link-border-hover: #{$btn-link-border-hover};
+    --btn-link-color-hover: #{$btn-link-color-hover};
+    --btn-link-background-hover: #{$btn-link-background-hover};
+    --btn-link-box-shadow-hover: #{$btn-link-box-shadow-hover};
+
+    --btn-link-border-active: #{$btn-link-border-active};
+    --btn-link-color-active: #{$btn-link-color-active};
+    --btn-link-background-active: #{$btn-link-background-active};
+    --btn-link-box-shadow-active: #{$btn-link-box-shadow-active};
+
+    --btn-link-border-focus: #{$btn-link-border-focus};
+    --btn-link-color-focus: #{$btn-link-color-focus};
+    --btn-link-background-focus: #{$btn-link-background-focus};
+    --btn-link-box-shadow-focus: #{$btn-link-box-shadow-focus};
+
+    --btn-link-border-disabled: #{$btn-link-border-disabled};
+    --btn-link-color-disabled: #{$btn-link-color-disabled};
+    --btn-link-background-disabled: #{$btn-link-background-disabled};
+    --btn-link-box-shadow-disabled: #{$btn-link-box-shadow-disabled};
+    // Link Button
 }
 
 .btn {
@@ -234,6 +332,9 @@ $btn-tertiary-background-disabled: var(--color-neutral-100);
     &:active {
         box-shadow: var(--btn-shadow-active);
         opacity: var(--btn-opacity-active);
+    }
+    &:disabled {
+        cursor: not-allowed;
     }
 }
 
@@ -272,50 +373,40 @@ $btn-tertiary-background-disabled: var(--color-neutral-100);
     box-shadow: var(--btn-#{$variant}-box-shadow#{$state});
 }
 
-.btn-primary {
-    @include base-button(primary, '');
+@mixin button-variant($variant){
+    @include base-button($variant, '');
     &:hover {
-        @include base-button(primary, '-hover');
+        @include base-button($variant, '-hover');
     }
     &:active {
-        @include base-button(primary, '-active');
+        @include base-button($variant, '-active');
     }
     &:focus {
-        @include base-button(primary, '-focus');
+        @include base-button($variant, '-focus');
     }
     &:disabled {
-        background: var(--btn-primary-background-disabled);
+        @include base-button($variant, '-disabled');
     }
+}
+
+
+
+.btn-primary {
+    @include button-variant('primary');
 }
 
 .btn-secondary {
-    @include base-button(secondary, '');
-    &:hover {
-        @include base-button(secondary, -hover);
-    }
-    &:active {
-        @include base-button(secondary, -active);
-    }
-    &:focus {
-        @include base-button(secondary, -focus);
-    }
-    &:disabled {
-        background: var(--btn-secondary-background-disabled);
-    }
+    @include button-variant('secondary');
 }
 
 .btn-tertiary {
-    @include base-button(tertiary, '');
-    &:hover {
-        @include base-button(tertiary, -hover);
-    }
-    &:active {
-        @include base-button(tertiary, -active);
-    }
-    &:focus {
-        @include base-button(tertiary, -focus);
-    }
-    &:disabled {
-        background: var(--btn-tertiary-background-disabled);
-    }
+    @include button-variant('tertiary');
+}
+
+.btn-outline {
+    @include button-variant('outline');
+}
+
+.btn-link {
+    @include button-variant('link');
 }
