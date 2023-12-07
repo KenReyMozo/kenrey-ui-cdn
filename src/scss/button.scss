@@ -325,6 +325,10 @@ $btn-link-box-shadow-disabled: unset;
     box-sizing: border-box;
     transition-duration: var(--btn-transition-duration);
     opacity: var(--btn-opacity);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     &:hover {
         box-shadow: var(--btn-shadow-hover);
         opacity: var(--btn-opacity-hover);
@@ -338,32 +342,33 @@ $btn-link-box-shadow-disabled: unset;
     }
 }
 
-.btn-sm {
-    border-radius: var(--btn-border-radius-sm);
-    font-size: var(--btn-size-sm);
+@mixin btn-size($size) {
+    border-radius: var(--btn-border-radius-#{$size});
+    font-size: var(--btn-size-#{$size});
     font-weight: 500;
-    padding: var(--btn-padding-sm);
+    padding: var(--btn-padding-#{$size});
+
+    svg {
+        width: 1.5em;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+}
+
+.btn-sm {
+    @include btn-size(sm);
 }
 
 .btn-md {
-    border-radius: var(--btn-border-radius-md);
-    font-size: var(--btn-size-md);
-    font-weight: 500;
-    padding: var(--btn-padding-md);
+    @include btn-size(md);
 }
 
 .btn-lg {
-    border-radius: var(--btn-border-radius-lg);
-    font-size: var(--btn-size-lg);
-    font-weight: 500;
-    padding: var(--btn-padding-lg);
+    @include btn-size(lg);
 }
 
 .btn-xl {
-    border-radius: var(--btn-border-radius-xl);
-    font-size: var(--btn-size-xl);
-    font-weight: 500;
-    padding: var(--btn-padding-xl);
+    @include btn-size(xl);
 }
 
 @mixin base-button($variant, $state){
