@@ -3,3 +3,8 @@ declare module '*.css' {
     export default content
   }
   
+declare module '*.scss' {
+    const content: { [className: string]: string }
+    export default content
+  }
+  

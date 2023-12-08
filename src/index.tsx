@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
         <Sidebar/>
-        <div style={{ width: '800px', margin: '20px auto' }}>
+        <div style={{ width: '1200px', margin: '20px auto' }}>
             <h1>Kenrey-UI</h1>
             <h2>This is the demonstration of how to create github-pages</h2>
             <a href='https://github.com/KenReyMozo/kenrey-ui'>
