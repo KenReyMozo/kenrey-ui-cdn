@@ -48,8 +48,34 @@ $btn-primary-border-disabled: 1px solid var(--color-primary-100);
 $btn-primary-color-disabled: var(--color-primary-50);
 $btn-primary-background-disabled: var(--color-primary-100);
 $btn-primary-box-shadow-disabled: unset;
-
 // Primary Button
+
+// Primary Destructive Button
+$btn-primary-destructive-border: 1px solid var(--color-destructive-500, #EE2E2E);
+$btn-primary-destructive-color: var(--color-generic-0);
+$btn-primary-destructive-background: var(--color-destructive-500, #EE2E2E);
+$btn-primary-destructive-box-shadow: unset;
+
+$btn-primary-destructive-border-hover: 1px solid var(--color-destructive-400, #F97070);
+$btn-primary-destructive-color-hover: var(--color-generic-0);
+$btn-primary-destructive-background-hover: var(--color-destructive-400, #F97070);
+$btn-primary-destructive-box-shadow-hover: unset;
+
+$btn-primary-destructive-border-active: 1px solid var(--color-destructive-400, #F97070);
+$btn-primary-destructive-color-active: var(--color-destructive-200, #FECACA);
+$btn-primary-destructive-background-active: var(--color-destructive-600, #DD2525);
+$btn-primary-destructive-box-shadow-active: unset;
+
+$btn-primary-destructive-border-focus: 1px solid var(--color-destructive-400, #F97070);
+$btn-primary-destructive-color-focus: var(--color-destructive-200, #FECACA);
+$btn-primary-destructive-background-focus: var(--color-destructive-600, #DD2525);
+$btn-primary-destructive-box-shadow-focus: 0 0 0 0.3em var(--color-destructive-100, #FBBEBE);
+
+$btn-primary-destructive-border-disabled: 1px solid var(--color-destructive-200, #FECACA);
+$btn-primary-destructive-color-disabled: var(--color-destructive-200, #FECACA);
+$btn-primary-destructive-background-disabled: var(--color-destructive-300, #FCA5A5);
+$btn-primary-destructive-box-shadow-disabled: unset;
+// Primary Destructive Button
 
 // Secondary Button
 $btn-secondary-border: 1px solid transparent;
@@ -76,9 +102,34 @@ $btn-secondary-border-disabled: 1px solid var(--color-primary-50, #F0F6FF);
 $btn-secondary-color-disabled: var(--color-primary-200, #B3D4FF);
 $btn-secondary-background-disabled:  var(--color-primary-50, #F0F6FF);
 $btn-secondary-box-shadow-disabled: unset;
-
-
 // Secondary Button
+
+// Secondary Destructive Button
+$btn-secondary-destructive-border: 1px solid transparent;
+$btn-secondary-destructive-color: var(--color-destructive-600, #DD2525);
+$btn-secondary-destructive-background: var(--color-destructive-50, #FEF2F2);
+$btn-secondary-destructive-box-shadow: unset;
+
+$btn-secondary-destructive-border-hover: 1px solid transparent;
+$btn-secondary-destructive-color-hover: var(--color-destructive-200, #FECACA);
+$btn-secondary-destructive-background-hover: var(--color-destructive-600, #DD2525);
+$btn-secondary-destructive-box-shadow-hover: unset;
+
+$btn-secondary-destructive-border-active: 1px solid var(--color-destructive-200, #FECACA);;
+$btn-secondary-destructive-color-active: var(--color-destructive-500, #EE2E2E);
+$btn-secondary-destructive-background-active: var(--color-destructive-100, #FEE2E2);
+$btn-secondary-destructive-box-shadow-active: unset;
+
+$btn-secondary-destructive-border-focus: 1px solid var(--color-destructive-200, #FECACA);
+$btn-secondary-destructive-color-focus: var(--color-destructive-500, #EE2E2E);
+$btn-secondary-destructive-background-focus: var(--color-destructive-100, #FEE2E2);
+$btn-secondary-destructive-box-shadow-focus: 0 0 0 0.3em var(--color-destructive-100, #FBBEBE);
+
+$btn-secondary-destructive-border-disabled: 1px solid var(--color-destructive-50, #FEF2F2);
+$btn-secondary-destructive-color-disabled: var(--color-destructive-300, #FCA5A5);
+$btn-secondary-destructive-background-disabled: var(--color-destructive-50, #FEF2F2);
+$btn-secondary-destructive-box-shadow-disabled: unset;
+// Secondary Destribute Button
 
 // Tertiary Button
 $btn-tertiary-border: 1px solid var(--color-neutral-200, #E4E4E4);
@@ -105,8 +156,34 @@ $btn-tertiary-border-disabled: 1px solid var(--color-neutral-200, #E4E4E4);
 $btn-tertiary-color-disabled: var(--color-neutral-300, #D3D3D3);
 $btn-tertiary-background-disabled: var(--color-generic-0, #FFFFFF);
 $btn-tertiary-box-shadow-disabled: unset;
-
 // Tertiary Button
+
+// Tertiary Destructive Button
+$btn-tertiary-destructive-border: 1px solid var(--color-destructive-200, #FECACA);
+$btn-tertiary-destructive-color: var(--color-destructive-500, #EE2E2E);
+$btn-tertiary-destructive-background: var(--color-generic-0, #FFFFFF);
+$btn-tertiary-destructive-box-shadow: unset;
+
+$btn-tertiary-destructive-border-hover: 1px solid var(--color-destructive-300, #FCA5A5);
+$btn-tertiary-destructive-color-hover: var(--color-destructive-500, #EE2E2E);
+$btn-tertiary-destructive-background-hover: var(--color-destructive-300, #FCA5A5);
+$btn-tertiary-destructive-box-shadow-hover: unset;
+
+$btn-tertiary-destructive-border-active: 1px solid var(--color-destructive-300, #FCA5A5);
+$btn-tertiary-destructive-color-active: var(--color-destructive-400, #F97070);
+$btn-tertiary-destructive-background-active: var(--color-destructive-50, #FEF2F2); 
+$btn-tertiary-destructive-box-shadow-active: unset;
+
+$btn-tertiary-destructive-border-focus: 1px solid var(--color-destructive-300, #FCA5A5);
+$btn-tertiary-destructive-color-focus: var(--color-destructive-400, #F97070);
+$btn-tertiary-destructive-background-focus: var(--color-destructive-50, #FEF2F2);
+$btn-tertiary-destructive-box-shadow-focus: 0px 0px 0px 4px var(--color-destructive-100, #FBBEBE); 
+
+$btn-tertiary-destructive-border-disabled: 1px solid var(--color-destructive-200, #FECACA);
+$btn-tertiary-destructive-color-disabled: var(--color-destructive-300, #FCA5A5);
+$btn-tertiary-destructive-background-disabled: var(--color-generic-0, #FFFFFF);
+$btn-tertiary-destructive-box-shadow-disabled: unset;
+// Tertiary Destructive  Button
 
 // Outline Button
 $btn-outline-border: 1px solid var(--color-primary-500, #004AAD);
@@ -135,6 +212,33 @@ $btn-outline-background-disabled: transparent;
 $btn-outline-box-shadow-disabled: unset;
 // Outline Button
 
+// Outline Destructive Button
+$btn-outline-destructive-border: 1px solid var(--color-destructive-500, #EE2E2E);
+$btn-outline-destructive-color: var(--color-destructive-500, #EE2E2E);
+$btn-outline-destructive-background: transparent;
+$btn-outline-destructive-box-shadow: unset;
+
+$btn-outline-destructive-border-hover: 1px solid var(--color-destructive-400, #F97070);
+$btn-outline-destructive-color-hover: var(--color-destructive-400, #F97070);
+$btn-outline-destructive-background-hover: var(--color-destructive-50, #FEF2F2);
+$btn-outline-destructive-box-shadow-hover: unset;
+
+$btn-outline-destructive-border-active: 1px solid var(--color-destructive-400, #F97070);
+$btn-outline-destructive-color-active: var(--color-destructive-400, #F97070);
+$btn-outline-destructive-background-active: var(--color-destructive-200, #FECACA);
+$btn-outline-destructive-box-shadow-active: unset;
+
+$btn-outline-destructive-border-focus: 1px solid var(--color-destructive-400, #F97070);
+$btn-outline-destructive-color-focus: var(--color-destructive-500, #EE2E2E);
+$btn-outline-destructive-background-focus: transparent;
+$btn-outline-destructive-box-shadow-focus: 0 0 0 0.2em var(--color-destructive-400, #F97070);
+
+$btn-outline-destructive-border-disabled: 1px solid var(--color-destructive-300, #FCA5A5);
+$btn-outline-destructive-color-disabled: var(--color-destructive-300, #FCA5A5);
+$btn-outline-destructive-background-disabled: transparent;
+$btn-outline-destructive-box-shadow-disabled: unset;
+// Outline Destructive Button
+
 // Link Button
 $btn-link-border: 1px solid transparent;
 $btn-link-color: var(--color-primary-500, #004AAD);
@@ -161,6 +265,33 @@ $btn-link-color-disabled: var(--color-primary-200, #B3D4FF);
 $btn-link-background-disabled: transparent;
 $btn-link-box-shadow-disabled: unset;
 // Link Button
+
+// Link Destructive Button
+$btn-link-destructive-border: 1px solid transparent;
+$btn-link-destructive-color: var(--color-destructive-500, #EE2E2E);
+$btn-link-destructive-background: transparent;
+$btn-link-destructive-box-shadow: unset;
+
+$btn-link-destructive-border-hover: 1px solid transparent;
+$btn-link-destructive-color-hover: var(--color-destructive-400, #F97070);
+$btn-link-destructive-background-hover: transparent;
+$btn-link-destructive-box-shadow-hover: unset;
+
+$btn-link-destructive-border-active: 1px solid transparent;
+$btn-link-destructive-color-active: var(--color-destructive-600, #DD2525);
+$btn-link-destructive-background-active: transparent;
+$btn-link-destructive-box-shadow-active: unset;
+
+$btn-link-destructive-border-focus: 1px solid var(--color-destructive-500, #EE2E2E);
+$btn-link-destructive-color-focus: var(--color-destructive-500, #EE2E2E);
+$btn-link-destructive-background-focus: transparent;
+$btn-link-destructive-box-shadow-focus: unset;
+
+$btn-link-destructive-border-disabled: 1px solid transparent;
+$btn-link-destructive-color-disabled: var(--color-destructive-300, #FCA5A5);
+$btn-link-destructive-background-disabled: transparent;
+$btn-link-destructive-box-shadow-disabled: unset;
+// Link Destructive Button
 
 
 :root {
@@ -214,6 +345,32 @@ $btn-link-box-shadow-disabled: unset;
     --btn-primary-box-shadow-disabled: #{$btn-primary-box-shadow-disabled};
     // Primary Button
 
+    // Primary Destructive Button
+    --btn-primary-destructive-border: #{$btn-primary-destructive-border};
+    --btn-primary-destructive-color: #{$btn-primary-destructive-color};
+    --btn-primary-destructive-background: #{$btn-primary-destructive-background};
+
+    --btn-primary-destructive-border-hover: #{$btn-primary-destructive-border-hover};
+    --btn-primary-destructive-color-hover: #{$btn-primary-destructive-color-hover};
+    --btn-primary-destructive-background-hover: #{$btn-primary-destructive-background-hover};
+    --btn-primary-destructive-box-shadow-hover: #{$btn-primary-destructive-box-shadow-hover};
+
+    --btn-primary-destructive-border-active: #{$btn-primary-destructive-border-active};
+    --btn-primary-destructive-color-active: #{$btn-primary-destructive-color-active};
+    --btn-primary-destructive-background-active: #{$btn-primary-destructive-background-active};
+    --btn-primary-destructive-box-shadow-active: #{$btn-primary-destructive-box-shadow-active};
+
+    --btn-primary-destructive-border-focus: #{$btn-primary-destructive-border-focus};
+    --btn-primary-destructive-color-focus: #{$btn-primary-destructive-color-focus};
+    --btn-primary-destructive-background-focus: #{$btn-primary-destructive-background-focus};
+    --btn-primary-destructive-box-shadow-focus: #{$btn-primary-destructive-box-shadow-focus};
+
+    --btn-primary-destructive-border-disabled: #{$btn-primary-destructive-border-disabled};
+    --btn-primary-destructive-color-disabled: #{$btn-primary-destructive-color-disabled};
+    --btn-primary-destructive-background-disabled: #{$btn-primary-destructive-background-disabled};
+    --btn-primary-destructive-box-shadow-disabled: #{$btn-primary-destructive-box-shadow-disabled};
+    // Primary Destructive Button
+
     // Seconday Button
     --btn-secondary-border: #{$btn-secondary-border};
     --btn-secondary-color: #{$btn-secondary-color};
@@ -239,6 +396,32 @@ $btn-link-box-shadow-disabled: unset;
     --btn-secondary-background-disabled: #{$btn-secondary-background-disabled};
     --btn-secondary-box-shadow-disabled: #{$btn-secondary-box-shadow-disabled};
     // Seconday Button
+
+    // Seconday Destructive Button
+    --btn-secondary-destructive-border: #{$btn-secondary-destructive-border};
+    --btn-secondary-destructive-color: #{$btn-secondary-destructive-color};
+    --btn-secondary-destructive-background: #{$btn-secondary-destructive-background};
+
+    --btn-secondary-destructive-border-hover: #{$btn-secondary-destructive-border-hover};
+    --btn-secondary-destructive-color-hover: #{$btn-secondary-destructive-color-hover};
+    --btn-secondary-destructive-background-hover: #{$btn-secondary-destructive-background-hover};
+    --btn-secondary-destructive-box-shadow-hover: #{$btn-secondary-destructive-box-shadow-hover};
+
+    --btn-secondary-destructive-border-active: #{$btn-secondary-destructive-border-active};
+    --btn-secondary-destructive-color-active: #{$btn-secondary-destructive-color-active};
+    --btn-secondary-destructive-background-active: #{$btn-secondary-destructive-background-active};
+    --btn-secondary-destructive-box-shadow-active: #{$btn-secondary-destructive-box-shadow-active};
+
+    --btn-secondary-destructive-border-focus: #{$btn-secondary-destructive-border-focus};
+    --btn-secondary-destructive-color-focus: #{$btn-secondary-destructive-color-focus};
+    --btn-secondary-destructive-background-focus: #{$btn-secondary-destructive-background-focus};
+    --btn-secondary-destructive-box-shadow-focus: #{$btn-secondary-destructive-box-shadow-focus};
+
+    --btn-secondary-destructive-border-disabled: #{$btn-secondary-destructive-border-disabled};
+    --btn-secondary-destructive-color-disabled: #{$btn-secondary-destructive-color-disabled};
+    --btn-secondary-destructive-background-disabled: #{$btn-secondary-destructive-background-disabled};
+    --btn-secondary-destructive-box-shadow-disabled: #{$btn-secondary-destructive-box-shadow-disabled};
+    // Seconday Destructive Button
 
     // Tertiary Button
     --btn-tertiary-border: #{$btn-tertiary-border};
@@ -266,6 +449,32 @@ $btn-link-box-shadow-disabled: unset;
     --btn-tertiary-box-shadow-disabled: #{$btn-tertiary-box-shadow-disabled};
     // Tertiary Button
 
+    // Tertiary Destructive Button
+    --btn-tertiary-destructive-border: #{$btn-tertiary-destructive-border};
+    --btn-tertiary-destructive-color: #{$btn-tertiary-destructive-color};
+    --btn-tertiary-destructive-background: #{$btn-tertiary-destructive-background};
+
+    --btn-tertiary-destructive-border-hover: #{$btn-tertiary-destructive-border-hover};
+    --btn-tertiary-destructive-color-hover: #{$btn-tertiary-destructive-color-hover};
+    --btn-tertiary-destructive-background-hover: #{$btn-tertiary-destructive-background-hover};
+    --btn-tertiary-destructive-box-shadow-hover: #{$btn-tertiary-destructive-box-shadow-hover};
+
+    --btn-tertiary-destructive-border-active: #{$btn-tertiary-destructive-border-active};
+    --btn-tertiary-destructive-color-active: #{$btn-tertiary-destructive-color-active};
+    --btn-tertiary-destructive-background-active: #{$btn-tertiary-destructive-background-active};
+    --btn-tertiary-destructive-box-shadow-active: #{$btn-tertiary-destructive-box-shadow-active};
+
+    --btn-tertiary-destructive-border-focus: #{$btn-tertiary-destructive-border-focus};
+    --btn-tertiary-destructive-color-focus: #{$btn-tertiary-destructive-color-focus};
+    --btn-tertiary-destructive-background-focus: #{$btn-tertiary-destructive-background-focus};
+    --btn-tertiary-destructive-box-shadow-focus: #{$btn-tertiary-destructive-box-shadow-focus};
+
+    --btn-tertiary-destructive-border-disabled: #{$btn-tertiary-destructive-border-disabled};
+    --btn-tertiary-destructive-color-disabled: #{$btn-tertiary-destructive-color-disabled};
+    --btn-tertiary-destructive-background-disabled: #{$btn-tertiary-destructive-background-disabled};
+    --btn-tertiary-destructive-box-shadow-disabled: #{$btn-tertiary-destructive-box-shadow-disabled};
+    // Tertiary Destructive Button
+
     // Outline Button
     --btn-outline-border: #{$btn-outline-border};
     --btn-outline-color: #{$btn-outline-color};
@@ -292,6 +501,32 @@ $btn-link-box-shadow-disabled: unset;
     --btn-outline-box-shadow-disabled: #{$btn-outline-box-shadow-disabled};
     // Outline Button
 
+    // Outline Destructive Button
+    --btn-outline-destructive-border: #{$btn-outline-destructive-border};
+    --btn-outline-destructive-color: #{$btn-outline-destructive-color};
+    --btn-outline-destructive-background: #{$btn-outline-destructive-background};
+
+    --btn-outline-destructive-border-hover: #{$btn-outline-destructive-border-hover};
+    --btn-outline-destructive-color-hover: #{$btn-outline-destructive-color-hover};
+    --btn-outline-destructive-background-hover: #{$btn-outline-destructive-background-hover};
+    --btn-outline-destructive-box-shadow-hover: #{$btn-outline-destructive-box-shadow-hover};
+
+    --btn-outline-destructive-border-active: #{$btn-outline-destructive-border-active};
+    --btn-outline-destructive-color-active: #{$btn-outline-destructive-color-active};
+    --btn-outline-destructive-background-active: #{$btn-outline-destructive-background-active};
+    --btn-outline-destructive-box-shadow-active: #{$btn-outline-destructive-box-shadow-active};
+
+    --btn-outline-destructive-border-focus: #{$btn-outline-destructive-border-focus};
+    --btn-outline-destructive-color-focus: #{$btn-outline-destructive-color-focus};
+    --btn-outline-destructive-background-focus: #{$btn-outline-destructive-background-focus};
+    --btn-outline-destructive-box-shadow-focus: #{$btn-outline-destructive-box-shadow-focus};
+
+    --btn-outline-destructive-border-disabled: #{$btn-outline-destructive-border-disabled};
+    --btn-outline-destructive-color-disabled: #{$btn-outline-destructive-color-disabled};
+    --btn-outline-destructive-background-disabled: #{$btn-outline-destructive-background-disabled};
+    --btn-outline-destructive-box-shadow-disabled: #{$btn-outline-destructive-box-shadow-disabled};
+    // Outline Destructive Button
+
     // Link Button
     --btn-link-border: #{$btn-link-border};
     --btn-link-color: #{$btn-link-color};
@@ -317,6 +552,32 @@ $btn-link-box-shadow-disabled: unset;
     --btn-link-background-disabled: #{$btn-link-background-disabled};
     --btn-link-box-shadow-disabled: #{$btn-link-box-shadow-disabled};
     // Link Button
+
+    // Link Destructive Button
+    --btn-link-destructive-border: #{$btn-link-destructive-border};
+    --btn-link-destructive-color: #{$btn-link-destructive-color};
+    --btn-link-destructive-background: #{$btn-link-destructive-background};
+
+    --btn-link-destructive-border-hover: #{$btn-link-destructive-border-hover};
+    --btn-link-destructive-color-hover: #{$btn-link-destructive-color-hover};
+    --btn-link-destructive-background-hover: #{$btn-link-destructive-background-hover};
+    --btn-link-destructive-box-shadow-hover: #{$btn-link-destructive-box-shadow-hover};
+
+    --btn-link-destructive-border-active: #{$btn-link-destructive-border-active};
+    --btn-link-destructive-color-active: #{$btn-link-destructive-color-active};
+    --btn-link-destructive-background-active: #{$btn-link-destructive-background-active};
+    --btn-link-destructive-box-shadow-active: #{$btn-link-destructive-box-shadow-active};
+
+    --btn-link-destructive-border-focus: #{$btn-link-destructive-border-focus};
+    --btn-link-destructive-color-focus: #{$btn-link-destructive-color-focus};
+    --btn-link-destructive-background-focus: #{$btn-link-destructive-background-focus};
+    --btn-link-destructive-box-shadow-focus: #{$btn-link-destructive-box-shadow-focus};
+
+    --btn-link-destructive-border-disabled: #{$btn-link-destructive-border-disabled};
+    --btn-link-destructive-color-disabled: #{$btn-link-destructive-color-disabled};
+    --btn-link-destructive-background-disabled: #{$btn-link-destructive-background-disabled};
+    --btn-link-destructive-box-shadow-disabled: #{$btn-link-destructive-box-shadow-disabled};
+    // Link Destructive Button
 }
 
 .btn {
@@ -414,4 +675,24 @@ $btn-link-box-shadow-disabled: unset;
 
 .btn-link {
     @include button-variant('link');
+}
+
+.btn-primary-destructive {
+    @include button-variant('primary-destructive');
+}
+
+.btn-secondary-destructive {
+    @include button-variant('secondary-destructive');
+}
+
+.btn-tertiary-destructive {
+    @include button-variant('tertiary-destructive');
+}
+
+.btn-outline-destructive {
+    @include button-variant('outline-destructive');
+}
+
+.btn-link-destructive {
+    @include button-variant('link-destructive');
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import HomePage from './apps/HomePage'
-import { Sidebar } from 'kenrey-component'
+import { Sidebar } from './component/sidebar/Sidebar'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(

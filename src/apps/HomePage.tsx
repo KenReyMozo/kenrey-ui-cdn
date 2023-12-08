@@ -1,8 +1,9 @@
-import { Modal, Sidebar } from "kenrey-component"
+
 import React, { useState } from "react"
 import { Shades } from "./List";
+import Modal from "../component/modal/Modal";
+import Sidebar from "../component/sidebar/Sidebar";
 import Button from "../component/button/Button";
-import { BeakerIcon } from '@heroicons/react/24/solid'
 
 const HomePage : React.FC = () => {
 
@@ -14,24 +15,24 @@ const HomePage : React.FC = () => {
 
     return (
         <>
-            <div style={{ display: 'flex'}}>
-            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5} variant='primary' size="lg" lIcon={<BeakerIcon/>} rIcon={<BeakerIcon/>}>{item.value}</Button>)}
+            <div style={{ display: 'flex', flexWrap : 'wrap'}}>
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5 || i===2} variant='primary' isDestructive={i<3}>{item.value}</Button>)}
             </div>
             <br/>
-            <div style={{ display: 'flex'}}>
-            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5} variant='secondary' lIcon={<BeakerIcon/>} rIcon={<BeakerIcon/>}>{item.value}</Button>)}
+            <div style={{ display: 'flex', flexWrap : 'wrap'}}>
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5 || i===2} variant='secondary' isDestructive={i<3}>{item.value}</Button>)}
             </div>
             <br/>
-            <div style={{ display: 'flex'}}>
-            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5} variant='tertiary' lIcon={<BeakerIcon/>} rIcon={<BeakerIcon/>}>{item.value}</Button>)}
+            <div style={{ display: 'flex', flexWrap : 'wrap'}}>
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5 || i===2} variant='tertiary' isDestructive={i<3}>{item.value}</Button>)}
             </div>
             <br/>
-            <div style={{ display: 'flex'}}>
-            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5} variant='outline' lIcon={<BeakerIcon/>} rIcon={<BeakerIcon/>}>{item.value}</Button>)}
+            <div style={{ display: 'flex', flexWrap : 'wrap'}}>
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5 || i===2} variant='outline' isDestructive={i<3}>{item.value}</Button>)}
             </div>
             <br/>
-            <div style={{ display: 'flex'}}>
-            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5} variant='link' size="sm" lIcon={<BeakerIcon/>} rIcon={<BeakerIcon/>}>{item.value}</Button>)}
+            <div style={{ display: 'flex', flexWrap : 'wrap'}}>
+            {Shades.map((item, i) => <Button key={item.id} style={{ margin: 3 }} disabled={i>5 || i===2} variant='link' isDestructive={i<3}>{item.value}</Button>)}
             </div>
             <br/>
             <hr/>

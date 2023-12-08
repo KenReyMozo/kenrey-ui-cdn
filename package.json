@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "kenrey-component": "^1.0.12",
+    "@kenreymozo/kenrey-component": "^2.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
